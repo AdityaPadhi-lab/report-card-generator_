@@ -1,0 +1,415 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ✨ General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f1f1f1, #ffffff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🌟 Title Section */
+#title {
+    background: linear-gradient(135deg, #4D96FF, #069A8E);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.navbar-nav {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+}
+
+.brand-text {
+    font-family: 'Lilita One', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand-text:hover {
+    transform: scale(1.1);
+    color: #F7FF93;
+}
+
+/* 🖼️ Image Styling */
+.rc-img {
+    width: 320px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease-in-out;
+}
+
+.rc-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 📑 Heading Styling */
+h1 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    animation: slideDown 1s ease-in-out;
+}
+
+.title-btn {
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.title-icons {
+    color: #FFD93D;
+    font-weight: bold;
+}
+
+/* 🎯 Row Styling */
+.row {
+    text-align: center;
+    margin-top: 6%;
+}
+
+/* 🔥 Features Section */
+#features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+}
+
+.feature-card {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    background: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+    font-size: 70px;
+    color: #4D96FF;
+    transition: color 0.5s ease-in-out;
+}
+
+.icons:hover {
+    color: #F55353;
+}
+
+h3, p {
+    margin-top: 20px;
+    font-family: "Mochiy Pop One", sans-serif;
+    color: #333;
+}
+
+/* 📝 Form Styling */
+#std_input_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top: 70px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+#std_input_table:hover {
+    transform: scale(1.02);
+}
+
+#std_input_table td, #std_input_table th {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+}
+
+#std_input_table tr:nth-child(even) {
+    background-color: #A1E3D8;
+}
+
+#std_input_table tr:hover {
+    background-color: #F7FF93;
+    transition: background 0.3s;
+}
+
+#std_input_table th {
+    background-color: #4D96FF;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* 🚀 Buttons */
+button, input[type="submit"] {
+    border-radius: 30px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #4D96FF, #6BCB77);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(135deg, #F55353, #FFD93D);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* 🛠️ Select and Input */
+select, input[type="text"], input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+select:hover, input[type="text"]:hover, input[type="number"]:hover {
+    border-color: #4D96FF;
+    box-shadow: 0 0 8px rgba(77, 150, 255, 0.6);
+}
+
+/* 📄 PDF Section */
+.html_to_pdf {
+    border: 2px dotted black;
+    padding: 2px 5px 5px 5px;
+    background-color: #FFFBE7;
+}
+
+.school-title {
+    border: 5px solid #4D96FF;
+    color: #F55353;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.school-title:hover {
+    transform: scale(1.1);
+    background: #F7FF93;
+}
+
+/* 🎯 Report Table */
+#report-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+#report-table:hover {
+    transform: scale(1.02);
+}
+
+#report-table td, #report-table th {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+}
+
+#report-table tr:nth-child(even) {
+    background-color: #6BCB77;
+}
+
+#report-table th {
+    background-color: #4D96FF;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* 🖤 Footer */
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+    transition: background 0.5s ease;
+}
+
+.footer:hover {
+    background: #4D96FF;
+}
+
+/* 🎉 Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Title Styling */
+h3 {
+    font-size: 26px;
+    color: #4D96FF;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+    transition: color 0.5s ease;
+}
+
+h3:hover {
+    color: #F55353;
+}
+
+/* School Title */
+.school-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #F55353;
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 1.5s;
+    transition: transform 0.3s;
+}
+
+.school-title:hover {
+    transform: scale(1.05);
+    color: #4D96FF;
+}
+
+/* Tables */
+#report-table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+#report-table:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#report-table th, #report-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 12px;
+    transition: background 0.3s;
+}
+
+#report-table th {
+    background: #4D96FF;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#report-table tr:nth-child(even) {
+    background: #A1E3D8;
+}
+
+#report-table tr:hover {
+    background: #F7FF93;
+}
+
+/* Links */
+a {
+    color: #4D96FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F55353;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Footer */
+h6 {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    margin: 20px 0;
+    transition: color 0.3s;
+}
+
+h6 a {
+    color: #4D96FF;
+    transition: color 0.3s;
+}
+
+h6 a:hover {
+    color: #F55353;
+}
